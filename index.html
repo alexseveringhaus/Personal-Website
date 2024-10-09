@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Alex Severinghaus</title>
+</head>
+<body>
+    <div class="image-container">
+        <img class="background" src="http://ltalley.sioword.ucsd.edu/wp-content/uploads/sites/3/2018/09/scripps-header.jpg">
+        <img class="headshot" src="{{ url_for('static', filename='images/headshot.jpg') }}">
+        <div class="name">
+            <h2 id="name-text">ALEX  SEVERINGHAUS</h2>
+        </div>
+    </div>
+    <div class="main">
+        <div class="LeftSide">
+            <h1 class = "ProjectsTitle">About Me</h1>
+            <hr>
+            <p>I am a sophomore at the University of Southern California, Viterbi School of Engineering, pursuing a degree
+                in Computer Engineering & Computer Science. I am interested in a career software engineering, and I believe
+                my dual background in both computer engineering and computer science provides me with a unique perspective in 
+                this field. Outside of school, I love surfing, snowboarding, skateboarding, and am a big San Diego Padres fan!
+            </p>
+
+            <h1 class="ProjectsTitle">Experience</h1>
+            <hr>
+
+            <div class = "headerText">
+                <h3 class = "headerTitle">Scripps Institution of Oceanography, UC San Diego</h3>
+                <h3 class = "headerDate">May 2024 - August 2024</h3>
+            </div>
+            <div class = "subheaderText">
+                <p class = "subheaderTitle">Software Engineering Research Intern</p>
+                <p class = "subheaderLocation">San Diego, CA</p>
+            </div>
+            
+            <li>Designed object-oriented software to perform experiment that reduced costs of scientific projects by ~$300,000</li>
+            <li>Implemented Python parsing functions to manipulate a large ocean modeling data set of ~200,000 entries</li>
+            <li>Visualized Pareto frontiers to maximize effectiveness and minimize cost of experimental float arrays</li>
+            
+            <div class = "headerText">
+                <h3 class = "headerTitle">Center for Undergraduate Research in Viterbi Engineering Fellow</h3>
+                <h3 class = "headerDate">August 2024 - Present</h3>
+            </div>
+            <div class = "subheaderText">
+                <p class = "subheaderTitle">Undergraduate Researcher</p>
+                <p class = "subheaderLocation">Los Angeles, CA</p>
+            </div>
+            <li>Selected for a prestigious funded undergraduate research program in <a class="InteractionLink" href="https://uscinteractionlab.web.app/" target="_blank" rel="noopener noreferrer">USC Viterbi's Interaction Lab</a></li>
+            <li>Build socially assistive robots using Raspberry Pi to provide study companions for users with ADHD</li>
+            <li>Implement a reinforcement learning model in Python to personalize robot’s behavior towards users’ preferences</li>
+            <li>Collaborate with 10+ PhD and ~50 other student researchers to better implement hardware and software design</li>
+            
+            <div class = "headerText">
+                <h3 class = "headerTitle">Commonlands LLC</h3>
+                <h3 class = "headerDate">June 2022 - August 2022</h3>
+            </div>
+            <div class = "subheaderText">
+                <p class = "subheaderTitle">Engineering & Marketing Intern</p>
+                <p class = "subheaderLocation">San Diego, CA</p>
+            </div>
+            <li>Shadowed an optical engineer to execute marketing strategies for a local camera and optics company</li>
+            <li>Created individual HTML/CSS product pages and advanced search engine optimization for ~50 lenses</li>
+            <li>Developed product catalogs and spreadsheets to improve outreach, recording precise engineering specifications</li>
+
+            <h1 class="ProjectsTitle">Projects</h1>
+            <hr>
+            <h3 class="Project">Market Strategy Neural Network -</h3><a class = "GithubLink" href="https://github.com/alexseveringhaus/market-neural-network" target="_blank" rel="noopener noreferrer">github.com/alexseveringhaus/market-neural-network</a>
+            <li>Built a Keras Sequential neural network in Python to predict market trends using Yahoo Finance API</li>
+            <li>Implemented rolling mean/volatility features to assess recent price behavior, improving performance by ~25%</li>
+            <li>Reduced overfitting tendencies by adding dropout layers, L2 regularization, and adjusting the train/test split</li>
+            <h3 class="Project">Personal Website -</h3><a class = "GithubLink" href="https://github.com/alexseveringhaus/personal-website" target="_blank" rel="noopener noreferrer">github.com/alexseveringhaus/personal-website</a>
+            <li>Developed a full-stack web app to highlight personal experiences and projects using Python Flask backend</li>
+            <li>Built a coherent user interface using HTML/CSS frontend to maximize readability and engagement</li>
+            <li>Deployed website with Amazon Web Services, earning AWS Cloud Certification</li>
+            <h3 class="Project">Rideshare Information App - [in progress]</h3>
+            <li>Created a web app with a Java server backend to display current rideshare information to promote carpooling</li>
+            <li>Employed the Waterfall software development approach to solve an issue faced by ~30,000 other USC students</li>
+            <li>Deployed website with Amazon Web Services, earning valuable cloud experience</li>
+
+            <h1 class="ProjectsTitle">Skills</h1>
+            <hr>
+            <li>Programming: C++, C, Python, Java, Unix Shell, HTML, CSS</li>
+            <li>Technologies: Git, MySQL, Cloud (AWS), Docker, Virtual Machines, Eclipse, Raspberry Pi, Arduino, CAD</li>
+            <li>Certifications: AWS Cloud Certification [in progress]</li>
+        </div>
+        <div class="Sidebar">
+            <h1 class="ContactTitle">Contact</h1>
+            <hr>
+            <p><i class="fas fa-map-marker-alt"></i> San Diego, CA</p>
+            <p><a href="mailto:severing@usc.edu"><i class="fas fa-envelope-square"></i>Email</a></p>
+            <p><a href="https://linkedin.com/in/alex-severinghaus" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a></p>
+            <p><a href="https://github.com/alexseveringhaus" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>Github</a></p>
+            
+        </div>
+        
+    </div>
+    
+    <div class="bottom">
+
+    </div>
+    
+</body>
+</html>
