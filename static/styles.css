@@ -1,0 +1,209 @@
+h1 {
+    color: #000000;
+}
+
+body, html {
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Ensure body takes up the full height */
+    width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+body {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.image-container {
+    position: relative; /* Positioning context for the foreground image */
+    width: 100%; /* Full width of the page */
+    height: 75%; 
+    overflow-x: hidden; /* Hide overflow if images are larger */
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Center vertically */
+    flex-direction: column;
+}
+
+.background {
+    position: absolute; /* Position it absolutely within the container */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Cover the container width */
+    height: 100%; /* Cover the container height */
+    object-fit: cover; /* Ensure the image covers the area */
+    z-index: 1; /* Lower z-index */
+}
+
+.headshot {
+    position: relative; /* Keep it in the normal flow */
+    width: 200px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2; /* Higher z-index so it appears on top */
+}
+
+.name {
+    position: relative;
+    z-index: 2; /* Ensure it appears above the background */
+    letter-spacing: 0;
+    margin-top: 8px; /* Space between headshot and text */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Center the text */
+    font-size: 32px; /* Font size */
+}
+
+#name-text {
+    color: white;
+    font-family: "Open Sans", serif;
+    font-style: normal;
+}
+
+.main {
+    font-size: 22px;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    color: black;
+    margin-left: 20px;
+    margin-right: 35%;
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+hr {
+    border: none; /* Remove default border */
+    height: 3px; /* Set the height of the line */
+    background-color: black; /* Set the color */
+    margin: 5px 0; /* Add space above and below the line */
+}
+
+.LeftSide {
+    flex: 6;
+}
+
+.Sidebar {
+    flex: 2;
+    text-align: left;
+    align-items: center;
+    margin-right: 2%;
+    margin-left: 5%;
+    
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 5px;
+    height: 100px;
+    background-color:rgb(255, 255, 255);
+}
+
+.ProjectsTitle {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+h3 {
+    margin-top:12px;
+    margin-bottom:0px;
+    padding:5px;
+    display:inline;
+}
+
+.ContactTitle {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.GithubLink {
+    font-style: italic;
+    color: #000000;
+}
+
+.fa-envelope-square {
+    color: #007bff;
+}
+
+.fa-linkedin {
+    color: #007bb6;
+}
+
+.Sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.Sidebar i {
+    margin-right: 8px;
+}
+
+.Sidebar a:hover {
+    text-decoration: underline;
+}
+
+.fas, .fab {
+    margin-left: 25%;
+}
+
+.headerText {
+    display: flex;             /* Use flexbox layout */
+    justify-content: space-between; /* Distribute items with space between */
+    align-items: center;       /* Vertically center the text */
+    margin: 0;
+    padding: 0;
+}
+
+.headerTitle {
+    text-align: left;          /* Ensure text is left-aligned */
+    margin-bottom: 0;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.headerDate {
+    text-align: right;         /* Ensure text is right-aligned */
+    margin: 0;
+    padding: 0;
+}
+
+.subheaderText {
+    display: flex;             /* Use flexbox layout */
+    justify-content: space-between; /* Distribute items with space between */
+    align-items: center;       /* Vertically center the text */
+    font-style: italic;
+    font-size: 1.17em;
+    margin: 0;
+    padding: 0;
+}
+
+.subheaderTitle {
+    text-align: left;          /* Ensure text is left-aligned */
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.subheaderLocation {
+    text-align: right;         /* Ensure text is right-aligned */
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.InteractionLink {
+    color:#000000;
+}
+
+.Project {
+    margin-top: 8px;
+}
