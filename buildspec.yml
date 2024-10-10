@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11.0  # Specify the Python version you are using
+    commands:
+      - echo "Installing dependencies"
+      - pip install flask  # Install Flask
+
+  build:
+    commands:
+      - echo "Building the application"
+      - echo "No specific build commands needed for this app"
+
+  post_build:
+    commands:
+      - echo "Starting Flask application"
+      - nohup python application.py &  # Start the Flask app in the background
+
+artifacts:
+  files:
+    - '**/*'  # Include all files in the output
