@@ -22,7 +22,7 @@ artifacts:
   files:
     - '**/*'  # Include all files in the output
   discard-paths: no
-  base-directory: /  # Use the root directory for the app
+  base-directory: /codebuild/output/src4157680023/src/Personal-Website  # Use the root directory for the app
 
 frontend:
   phases:
