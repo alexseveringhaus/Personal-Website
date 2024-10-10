@@ -21,7 +21,6 @@ phases:
 artifacts:
   files:
     - '**/*'  # Include all files in the output
-  discard-paths: no
   base-directory: /codebuild/output/src4157680023/src/Personal-Website  # Use the root directory for the app
 
 frontend:
