@@ -9,15 +9,15 @@
 </head>
 <body>
     <div class="image-container">
-        <img class="background" src="http://ltalley.sioword.ucsd.edu/wp-content/uploads/sites/3/2018/09/scripps-header.jpg">
+        <img class="background" src="{{ url_for('static', filename='images/la_jolla_background.jpg') }}">
         <img class="headshot" src="{{ url_for('static', filename='images/headshot.jpg') }}">
         <div class="name">
-            <h2 id="name-text">ALEX  SEVERINGHAUS</h2>
+            <h1 id="name-text">ALEX  SEVERINGHAUS</h1>
         </div>
     </div>
     <div class="main">
         <div class="LeftSide">
-            <h1 class = "ProjectsTitle">About Me</h1>
+            <h2 class = "ProjectsTitle">About Me</h2>
             <hr>
             <p>I am a sophomore at the University of Southern California, Viterbi School of Engineering, pursuing a degree
                 in Computer Engineering & Computer Science. I am interested in a career software engineering, and I believe
@@ -25,7 +25,7 @@
                 this field. Outside of school, I love surfing, snowboarding, skateboarding, and am a big San Diego Padres fan!
             </p>
 
-            <h1 class="ProjectsTitle">Experience</h1>
+            <h2 class="ProjectsTitle">Experience</h2>
             <hr>
 
             <div class = "headerText">
@@ -66,7 +66,7 @@
             <li>Created individual HTML/CSS product pages and advanced search engine optimization for ~50 lenses</li>
             <li>Developed product catalogs and spreadsheets to improve outreach, recording precise engineering specifications</li>
 
-            <h1 class="ProjectsTitle">Projects</h1>
+            <h2 class="ProjectsTitle">Projects</h2>
             <hr>
             <h3 class="Project">Market Strategy Neural Network -</h3><a class = "GithubLink" href="https://github.com/alexseveringhaus/market-neural-network" target="_blank" rel="noopener noreferrer">github.com/alexseveringhaus/market-neural-network</a>
             <li>Built a Keras Sequential neural network in Python to predict market trends using Yahoo Finance API</li>
@@ -81,14 +81,14 @@
             <li>Employed the Waterfall software development approach to solve an issue faced by ~30,000 other USC students</li>
             <li>Led a team of 8 other computer science students, ensuring effective development strategies with version control</li>
 
-            <h1 class="ProjectsTitle">Skills</h1>
+            <h2 class="ProjectsTitle">Skills</h2>
             <hr>
             <li>Programming: C++, C, Python, Java, Unix Shell, HTML, CSS</li>
             <li>Technologies: Git, MySQL, Cloud (AWS), Docker, Virtual Machines, Eclipse, Raspberry Pi, Arduino, CAD</li>
             <li>Certifications: AWS Cloud Certification [in progress]</li>
         </div>
         <div class="Sidebar">
-            <h1 class="ContactTitle">Contact</h1>
+            <h2 class="ContactTitle">Contact</h2>
             <hr>
             <p><i class="fas fa-map-marker-alt"></i> San Diego, CA</p>
             <p><a href="mailto:severing@usc.edu"><i class="fas fa-envelope-square"></i>Email</a></p>

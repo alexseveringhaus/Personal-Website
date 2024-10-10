@@ -6,7 +6,7 @@ phases:
       python: 3.11.0  # Specify the Python version you are using
     commands:
       - echo "Installing dependencies"
-      - pip install flask  # Install Flask
+      - pip install -r requirements.txt  # Install Flask
 
   build:
     commands:
@@ -21,3 +21,24 @@ phases:
 artifacts:
   files:
     - '**/*'  # Include all files in the output
+  discard-paths: no
+  base-directory: /  # Use the root directory for the app
+
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo Preparing the frontend...
+    build:
+      commands:
+        - echo Building the frontend...
+  artifacts:
+    baseDirectory: /  # Adjust according to your frontend folder
+    files:
+      - '**/*' 
+
+# Start Gunicorn as the production server
+run-as:
+  commands:
+    - echo "Starting Gunicorn server..."
+    - gunicorn --bind 0.0.0.0:8080 application:app  # Bind to the port and serve the Flask app
