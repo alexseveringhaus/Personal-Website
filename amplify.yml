@@ -6,39 +6,18 @@ phases:
       python: 3.11.0  # Specify the Python version you are using
     commands:
       - echo "Installing dependencies"
-      - pip install -r requirements.txt  # Install Flask
-
+      - pip install -r requirements.txt
   build:
     commands:
-      - echo "Building the application"
-      - python application.py
-
+      - echo "No build step for Flask app"
   post_build:
     commands:
-      - echo "Build completed"
+      - echo "Starting Gunicorn"
+      - gunicorn --bind 0.0.0.0:8080 application:app  # Runs Flask app via Gunicorn
 
 artifacts:
   files:
-    - templates/index.html  # Point to your index.html inside the templates folder
-    - static/**/*  # Include static files like CSS and images
-  base-directory: /codebuild/output/src2441611982/src/Personal-Website
-  discard-paths: false  # Preserve folder structure
-
-frontend:
-  phases:
-    preBuild:
-      commands:
-        - echo Preparing the frontend...
-    build:
-      commands:
-        - echo Building the frontend...
-  artifacts:
-    baseDirectory: /  # Adjust according to your frontend folder
-    files:
-      - '**/*' 
-
-# Start Gunicorn as the production server
-run-as:
-  commands:
-    - echo "Starting Gunicorn server..."
-    - gunicorn --bind 0.0.0.0:8080 application:app  # Bind to the port and serve the Flask app
+    - templates/index.html
+    - static/**/*
+  base-directory: .
+  discard-paths: false
