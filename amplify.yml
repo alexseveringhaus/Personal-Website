@@ -1,5 +1,14 @@
 version: 0.2
 
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "No frontend build required for Flask app"
+    build:
+      commands:
+        - echo "Building Flask app"
+
 phases:
   install:
     runtime-versions:
@@ -21,3 +30,7 @@ artifacts:
     - static/**/*
   base-directory: .
   discard-paths: false
+
+cache:
+  paths:
+    - /root/.cache/pip/***
