@@ -23,13 +23,12 @@ phases:
     commands:
       - echo "Starting Gunicorn"
       - gunicorn --bind 0.0.0.0:8080 application:app  # Runs Flask app via Gunicorn
-
-artifacts:
-  files:
-    - templates/index.html
-    - static/**/*
-  base-directory: .
-  discard-paths: false
+  artifacts:
+    base-directory: .
+    files:
+      - templates/index.html
+      - static/**/*
+    discard-paths: false
 
 cache:
   paths:
