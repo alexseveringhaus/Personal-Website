@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="{{ url_for('static', filename='images/usc_logo.jpg') }}" type="image/x-icon">
     <title>Alex Severinghaus</title>
 </head>
 <body>
@@ -15,6 +16,27 @@
             <h1 id="name-text">ALEX  SEVERINGHAUS</h1>
         </div>
     </div>
+    <div class="pageContainer">
+        <div class="carousel">
+            <div class="carousel-track">
+                <img class="logo" src="../static/images/python-image.jpg">
+                <img class="logo" src="../static/images/java-image.png">
+                <img class="logo" src="../static/images/c++-image.png">
+                <img class="logo" src="../static/images/javascript-image.png">
+                <img class="logo" src="../static/images/sql-image.webp">
+                <img class="logo" src="../static/images/html-image.png">
+                <img class="logo" src="../static/images/css-image.svg">
+
+                <img class="logo" src="../static/images/python-image.jpg">
+                <img class="logo" src="../static/images/java-image.png">
+                <img class="logo" src="../static/images/c++-image.png">
+                <img class="logo" src="../static/images/javascript-image.png">
+                <img class="logo" src="../static/images/sql-image.webp">
+                <img class="logo" src="../static/images/html-image.png">
+                <img class="logo" src="../static/images/css-image.svg">
+            </div>
+        </div>
+    
     <div class="main">
         <div class="LeftSide">
             <h2 class = "ProjectsTitle">About Me</h2>
@@ -33,27 +55,34 @@
                 <h3 class = "headerDate">May 2024 - August 2024</h3>
             </div>
             <div class = "subheaderText">
-                <p class = "subheaderTitle">Software Engineering Research Intern</p>
+                <div class="titleLink">
+                <p class = "subheaderTitle">Software Engineering Research Intern</p><span> <span style="font-style: normal;">|</span> <a class = "GithubLink" href="https://github.com/alexseveringhaus/Scripps-Summer2024" target="_blank">Github Link</a></span>
+                </div>
                 <p class = "subheaderLocation">San Diego, CA</p>
             </div>
-            
+            <ul>
             <li>Designed object-oriented software to perform experiment that reduced costs of scientific projects by ~$300,000</li>
             <li>Implemented Python parsing functions to manipulate a large ocean modeling data set of ~200,000 entries</li>
             <li>Visualized Pareto frontiers to maximize effectiveness and minimize cost of experimental float arrays</li>
-            
+            <li>Recommended an optimized sensor distribution of biogeochemical Argo floats to best observe the ocean</li>
+            <li>Managed Python packages for improved file handling, large-scale data modeling, and statistical analysis</li>
+            </ul>
             <div class = "headerText">
-                <h3 class = "headerTitle">Center for Undergraduate Research in Viterbi Engineering Fellow</h3>
+                <h3 class = "headerTitle">Center for Undergraduate Research in Viterbi Engineering</h3>
                 <h3 class = "headerDate">August 2024 - Present</h3>
             </div>
             <div class = "subheaderText">
-                <p class = "subheaderTitle">Undergraduate Researcher</p>
+                <div class="titleLink">
+                <p class = "subheaderTitle">Undergraduate Researcher</p><span> <span style="font-style: normal;">|</span> <a class = "GithubLink" href="https://github.com/interaction-lab/blossom-public/tree/study_companions/personalization" target="_blank">Github Link</a></span>
+                </div>
                 <p class = "subheaderLocation">Los Angeles, CA</p>
             </div>
+            <ul>
             <li>Selected for a prestigious funded undergraduate research program in <a class="InteractionLink" href="https://uscinteractionlab.web.app/" target="_blank" rel="noopener noreferrer">USC Viterbi's Interaction Lab</a></li>
             <li>Build socially assistive robots using Raspberry Pi to provide study companions for users with ADHD</li>
-            <li>Implement a reinforcement learning model in Python to personalize robot’s behavior towards users’ preferences</li>
+            <li>Implement Gaussian Process reinforcement learning in Python to personalize robot behavior to user preferences</li>
             <li>Collaborate with 10+ PhD and ~50 other student researchers to better implement hardware and software design</li>
-            
+            </ul>
             <div class = "headerText">
                 <h3 class = "headerTitle">Commonlands LLC</h3>
                 <h3 class = "headerDate">June 2022 - August 2022</h3>
@@ -62,43 +91,65 @@
                 <p class = "subheaderTitle">Engineering & Marketing Intern</p>
                 <p class = "subheaderLocation">San Diego, CA</p>
             </div>
+            <ul>
             <li>Shadowed an optical engineer to execute marketing strategies for a local camera and optics company</li>
             <li>Created individual HTML/CSS product pages and advanced search engine optimization for ~50 lenses</li>
             <li>Developed product catalogs and spreadsheets to improve outreach, recording precise engineering specifications</li>
+            </ul>
 
             <h2 class="ProjectsTitle">Projects</h2>
             <hr>
-            <h3 class="Project">Market Strategy Neural Network -</h3><a class = "GithubLink" href="https://github.com/alexseveringhaus/market-neural-network" target="_blank" rel="noopener noreferrer">github.com/alexseveringhaus/market-neural-network</a>
+            <div class="projectInfo">
+            <h3 class="Project">Rideshare App -</h3><span><a class="GithubLink" href="https://github.com/alexseveringhaus/rideshare-web-app" target="_blank">Github Link</a> | Java, MySQL, React, AJAX, Google Maps API</span>
+            </div>
+            <ul>
+            <li>Created a Java/React-based web app to promote USC rideshare with login functionality using MySQL schema</li>
+            <li>Interfaced asynchronous frontend calls to Java servlets and Google Maps API features with AJAX framework</li>
+            <li>Led a diverse team of 8 other CS students, coordinating Git version control for effective development strategies</li>
+            </ul>
+            <div class="projectInfo2">
+            <h3 class="Project">Noise Monitoring System -</h3><span><a class = "GithubLink" href="https://github.com/alexseveringhaus/noise-monitoring-iot" target="_blank">Github Link</a> | IoT, Python, Distributed Computing, MQTT</span>
+            </div>
+            <ul>
+            <li>Designed end-to-end IoT system to collect data on Raspberry Pi and send data via MQTT for remote processing</li>
+            <li>Performed signal processing in Python to analyze noise level then visualized results with Python-controlled LED</li>
+            </ul>
+            <div class="projectInfo2">
+            <h3 class="Project">Personal Website -</h3><span><a class = "GithubLink" href="https://github.com/alexseveringhaus/personal-website" target="_blank">Github Link</a> | Python, AWS, Flask, HTML/CSS</span>
+            </div>
+            <ul>
+            <li>Constructed this full-stack web app to highlight personal experiences and projects using Python Flask backend</li>
+            <li>Built a coherent user interface with HTML/CSS frontend; deployed website with Amazon Web Services EC2</li>
+            </ul>
+            <div class="projectInfo2">
+            <h3 class="Project">Market Strategy Neural Network -</h3><span><a class = "GithubLink" href="https://github.com/alexseveringhaus/market-neural-network" target="_blank">Github Link</a> | Python, TensorFlow, Keras, Yahoo Finance API</span>
+            </div>
+            <ul>
             <li>Built a Keras Sequential neural network in Python to predict market trends using Yahoo Finance API</li>
             <li>Implemented rolling mean/volatility features to assess recent price behavior, improving performance by ~25%</li>
             <li>Reduced overfitting tendencies by adding dropout layers, L2 regularization, and adjusting the train/test split</li>
-            <h3 class="Project">Personal Website -</h3><a class = "GithubLink" href="https://github.com/alexseveringhaus/personal-website" target="_blank" rel="noopener noreferrer">github.com/alexseveringhaus/personal-website</a>
-            <li>Developed a full-stack web app to highlight personal experiences and projects using Python Flask backend</li>
-            <li>Built a coherent user interface using HTML/CSS frontend to maximize readability and engagement</li>
-            <li>Deployed website with Amazon Web Services, earning valuable cloud experience</li>
-            <h3 class="Project">Rideshare Information App -</h3><a class="GithubLink">[in progress]</a>
-            <li>Created a web app with a Java server backend to display current rideshare information to promote carpooling</li>
-            <li>Employed the Waterfall software development approach to solve an issue faced by ~30,000 other USC students</li>
-            <li>Led a team of 8 other computer science students, ensuring effective development strategies with version control</li>
-
+            </ul>
             <h2 class="ProjectsTitle">Skills</h2>
             <hr>
-            <li>Programming: C++, C, Python, Java, Unix Shell, HTML, CSS</li>
-            <li>Technologies: Git, MySQL, Cloud (AWS), Docker, Virtual Machines, Eclipse, Raspberry Pi, Arduino, CAD</li>
-            <li>Certifications: AWS Cloud Certification [in progress]</li>
+            <ul>
+            <li>Languages: Python, Java, C/C++, SQL, JavaScript, HTML, CSS, Unix Shell</li>
+            <li>Technologies: VS Code, Eclipse, Git, MySQL, AWS, Docker, IntelliJ, Virtual Machines, Raspberry Pi, Arduino</li>
+            <li>Frameworks: TensorFlow, Keras, Sklearn, React, Jakarta EE, AJAX, Flask</li>
+            </ul>
+            
         </div>
         <div class="Sidebar">
             <h2 class="ContactTitle">Contact</h2>
             <hr>
-            <p><i class="fas fa-map-marker-alt"></i> San Diego, CA</p>
+            <p><i class="fas fa-map-marker-alt"></i>San Diego, CA</p>
             <p><a href="mailto:severing@usc.edu"><i class="fas fa-envelope-square"></i>Email</a></p>
             <p><a href="https://linkedin.com/in/alex-severinghaus" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a></p>
             <p><a href="https://github.com/alexseveringhaus" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>Github</a></p>
-            
+            <p><a href="/resume" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i>Resume</a></p>
         </div>
         
     </div>
-    
+    </div>
     <div class="bottom">
 
     </div>

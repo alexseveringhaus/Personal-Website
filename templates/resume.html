@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='images/usc_logo.jpg') }}" type="image/x-icon">
+    <title>Alex Severinghaus</title>
+</head>
+<body>
+    <div class="resume-container" style="height: 100%; width: 100%; top: 0; position: fixed; left: 0; overflow-clip-margin: content-box;">
+        <iframe src="{{ url_for('static', filename='resume.pdf') }}" width="100%" height="1000px"
+        style="border: none; padding: 0; margin: 0; width: 100%; height: 100vh; overflow-y: auto;"></iframe>
+        </iframe>
+    </div>
+</body>
+</html>

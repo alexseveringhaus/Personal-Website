@@ -3,8 +3,8 @@ h1 {
 }
 
 body, html {
-    margin: 0; /* Remove default margin */
-    height: 100%; /* Ensure body takes up the full height */
+    margin: 0; 
+    height: 100%; 
     width: 100%;
     overflow-x: hidden;
     background-color: white;
@@ -17,46 +17,46 @@ body {
 }
 
 .image-container {
-    position: relative; /* Positioning context for the foreground image */
-    width: 100%; /* Full width of the page */
+    position: relative; 
+    width: 100%; 
     height: 75%; 
-    overflow-x: hidden; /* Hide overflow if images are larger */
-    display: flex; /* Use Flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Center vertically */
+    overflow-x: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
     flex-direction: column;
 }
 
 .background {
-    position: absolute; /* Position it absolutely within the container */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    width: 100%; /* Cover the container width */
-    height: 100%; /* Cover the container height */
-    object-fit: cover; /* Ensure the image covers the area */
-    z-index: 1; /* Lower z-index */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    z-index: 1; 
 }
 
 .headshot {
-    position: relative; /* Keep it in the normal flow */
+    position: relative; 
     width: 200px;
     height: auto; 
     border-radius: 50%;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    z-index: 2; /* Higher z-index so it appears on top */
+    z-index: 2; 
 }
 
 .name {
     position: relative;
-    z-index: 2; /* Ensure it appears above the background */
+    z-index: 2; 
     letter-spacing: 0;
-    margin-top: 8px; /* Space between headshot and text */
+    margin-top: 8px; 
     margin-left: auto;
     margin-right: auto;
-    text-align: center; /* Center the text */
-    font-size: 32px; /* Font size */
+    text-align: center; 
+    font-size: 32px; 
 }
 
 #name-text {
@@ -72,17 +72,17 @@ body {
     color: black;
     margin-left: 20px;
     margin-right: 35%;
-    display: flex; /* Use Flexbox for layout */
+    display: flex; 
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
 }
 
 hr {
-    border: none; /* Remove default border */
-    height: 3px; /* Set the height of the line */
-    background-color: black; /* Set the color */
-    margin: 5px 0; /* Add space above and below the line */
+    border: none;
+    height: 3px; 
+    background-color: black; 
+    margin: 5px 0; 
 }
 
 .LeftSide {
@@ -95,7 +95,6 @@ hr {
     align-items: center;
     margin-right: 2%;
     margin-left: 5%;
-    
 }
 
 .bottom {
@@ -152,36 +151,36 @@ h3 {
     text-decoration: underline;
 }
 
-.fas, .fab {
+.fas, .fab, .fa-file-lines {
     margin-left: 25%;
 }
 
 .headerText {
-    display: flex;             /* Use flexbox layout */
-    justify-content: space-between; /* Distribute items with space between */
-    align-items: center;       /* Vertically center the text */
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 .headerTitle {
-    text-align: left;          /* Ensure text is left-aligned */
+    text-align: left; 
     margin-bottom: 0;
     margin-top: 8px;
     padding: 0;
 }
 
 .headerDate {
-    text-align: right;         /* Ensure text is right-aligned */
+    text-align: right;
     margin-top: 8px;
     margin-bottom: 0px;
     padding: 0;
 }
 
 .subheaderText {
-    display: flex;             /* Use flexbox layout */
-    justify-content: space-between; /* Distribute items with space between */
-    align-items: center;       /* Vertically center the text */
+    display: flex;             
+    justify-content: space-between;
+    align-items: center; 
     font-style: italic;
     font-size: 1.17em;
     margin: 0;
@@ -189,14 +188,14 @@ h3 {
 }
 
 .subheaderTitle {
-    text-align: left;          /* Ensure text is left-aligned */
+    text-align: left;         
     margin-top: 0;
-    margin-bottom: 5px;
-    padding: 0;
+    margin-bottom: 0px;
+    padding-right: 10px;
 }
 
 .subheaderLocation {
-    text-align: right;         /* Ensure text is right-aligned */
+    text-align: right; 
     margin-top: 0;
     margin-bottom: 5px;
     padding: 0;
@@ -208,4 +207,86 @@ h3 {
 
 .Project {
     margin-top: 8px;
+}
+
+.projectInfo {
+    margin-bottom: 10px;
+}
+
+.projectInfo2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.titleLink {
+    display: flex;
+    align-items: center; 
+}
+
+:root {
+    --gap: 9.453125vw; 
+}
+
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    display: block;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 20s linear infinite; 
+    background-color: white;
+    gap: var(--gap);
+}
+
+.javaImg {
+    margin-right: 5px;
+}
+
+.carousel-track img {
+    flex-shrink: 0;
+    background-color: white;
+    height: 150px;
+    width: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-1020.18px - 7 * var(--gap)));
+    }
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+@media (max-width: 860px) {
+    .carousel {
+        display: none;
+    }
+    .main {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-height: 500px) {
+    .carousel {
+        display: none;
+    }
 }
