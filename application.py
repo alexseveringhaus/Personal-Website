@@ -11,6 +11,6 @@ def resume():
     return render_template('resume.html')
 
 if __name__ == '__main__':
-    app.run(debug=False, port=80, host="0.0.0.0")
+    app.run(debug=False, port=8080, host="0.0.0.0")
     app.config['TEMPLATES_AUTO_RELOAD'] = True
 
